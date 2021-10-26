@@ -6,10 +6,17 @@
     box-sizing: border-box;
 }
 
-/* debug */
-header {
-    height: 250px;
-    width: 70%;
+/* Main */
+.container {
+    width: 80%;
     margin: 0 auto;
-    background-color: lightblue;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0;
 }
