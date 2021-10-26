@@ -1,0 +1,22 @@
+/* General rules */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 20px 0;
+}
