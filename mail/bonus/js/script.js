@@ -7,7 +7,7 @@ Qui, come detto, NON possiamo usare metodi nuovi sugli array ma lo facciamo con 
 const emailList = ["lombardomario01@gmail.com", "lucagenovese0@hotmail.it", "carlochiesa23@alice.it", "filippocarlona50@gmail.com"];
 
 // Chiedo all'utente la sua email
-let userEmail = prompt("Inserisci la tua email");
+let userEmail = document.getElementById("email_entered");
 
 
 // Controllo che sia nella lista di chi può accedere e stampo il messaggio sull'esito del controllo
@@ -19,8 +19,5 @@ for (let i = 0; i < emailList.length; i++){
         checkResult.classList.add("result");
         checkResult.append("La tua email è presente nella lista: ", userEmail);
         contEmail.append(checkResult);
-    }
-    else {
-        alert("Attenzione!! non puoi accedere. L'email inserita non è presente nella lista.");
     }
 }

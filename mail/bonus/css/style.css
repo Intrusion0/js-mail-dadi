@@ -7,9 +7,13 @@
 }
 
 /* Main */
-.container {
-    width: 80%;
-    margin: 0 auto;
+main {
+    height: calc(100vh - 56px);
+    background-color: rgb(228, 243, 255);
+}
+
+.ms_container {
+    padding: 50px 0;
 }
 
 .result {
@@ -19,4 +23,9 @@
     font-size: 30px;
     font-weight: 700;
     padding: 20px 0;
+}
+
+.cont-flex {
+    display: flex;
+    align-items: center;
 }
