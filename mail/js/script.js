@@ -11,16 +11,20 @@ let userEmail = prompt("Inserisci la tua email");
 
 
 // Controllo che sia nella lista di chi può accedere e stampo il messaggio sull'esito del controllo
+let emailInLista = false;
 for (let i = 0; i < emailList.length; i++){
 
     if (userEmail === emailList[i]){
-        const contEmail = document.querySelector("div.container");
+        emailInLista = true;
+    }
+}
+
+if (emailInLista === true) {
+    const contEmail = document.querySelector("div.container");
         const checkResult = document.createElement("div");
         checkResult.classList.add("result");
         checkResult.append("La tua email è presente nella lista: ", userEmail);
         contEmail.append(checkResult);
-    }
-    else {
-        alert("Attenzione!! non puoi accedere. L'email inserita non è presente nella lista.");
-    }
+} else {
+    alert("Attenzione!! non puoi accedere. L'email inserita non è presente nella lista.");
 }
